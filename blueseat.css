@@ -1,0 +1,533 @@
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+::-moz-selection { background: rgb(1,113,208); color: #fff; text-shadow: none; }
+::selection { background: rgb(1,113,208); color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+body { font-family: 'Open Sans', sans-serif; }
+#container { width: 924px; margin: 0 auto; }
+header { 
+  background-color: #1b3563;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+header h1 { color: #333; font-size: 24px; margin: 0; padding: 20px; }
+nav { margin-left: 20px; margin-bottom: 5px; }
+nav ul { list-style: none; }
+nav li {  
+  display: inline-block;
+  /* inline block hack for IE 6&7 */
+  zoom: 1;
+  *display: inline;
+  color: white;
+  margin-right: 10px;
+}
+nav a { 
+  border-bottom: 5px solid #333;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 4px;
+
+}
+nav a:hover { 
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 4px;
+
+}
+
+#framework { padding: 20px; }
+
+footer { padding: 20px; }
+
+label,
+label.fieldlabel { font-size: 16px; color: #666; }
+input, textarea { color: #282728; padding: 5px 10px; }
+input.text, textarea { background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+select:focus, input.text:focus, textarea:focus { outline: none; }
+
+#framework #invitationpage #submit_button { float: none; clear: both; display: block; text-align: center; border: none; background: #ccc;
+    -webkit-appearance: none; }
+
+#framework #invitationpage #submit_button { font-size: 16px; margin: 2em 0;  padding: 10px 20px; border: 1px solid #DDD;
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#DDD));
+    background-image: -webkit-linear-gradient(top, white, #DDD);
+    background-image: -moz-linear-gradient(top, white, #DDD);
+    background-image: -ms-linear-gradient(top, white, #DDD);
+    background-image: -o-linear-gradient(top, white, #DDD);
+    background-image: linear-gradient(top, white, #DDD);
+    -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android â‰¤1.6 */
+    border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */ }
+#framework #contribution .contribheader { color: #333; border-bottom: 1px solid #ddd; }
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+
+/* =============================================================================
+   Charles Style
+   ========================================================================== */
+
+
+input.text {
+border: 0px solid #ccc;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+font-family: Helvetica, arial, sans-serif;
+font-size: 16px;
+padding: 7px 5px;
+line-height: 27px;
+width: 259px;
+background: rgba(255,255,255,0.89)
+}
+
+input.text:hover, input.text:active {
+background: rgba(255,255,255,1)
+}
+
+
+input#zip.text {
+  width: 215px;
+}
+
+input.submit {
+      background-color:#E31818;
+
+    -webkit-border-radius:3px;
+
+    border: 0px !important;
+
+    border-radius:3px;
+
+    display:inline-block;
+
+    color:#ffffff;
+
+    font-family:Verdana;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    padding:10px 20px;
+
+    text-decoration:none;
+
+    width: 215px;
+}
+
+input.submit:hover {
+
+    background-color:#D30F0F;
+
+}
+
+
+
+input.submit:active {
+
+    position:relative;
+
+    top:1px;
+
+}
+
+div#mainwrap {
+  box-shadow:0px 0px 2px #555; 
+ border: 15px solid #d9dbd9;
+   margin-top: 20px;
+
+}
+
+div#framework {
+margin-left: 507px;
+padding-bottom: 20px;
+width: 335px !important;
+padding: 5px 15px 20px 25px;
+}
+
+div#framework-left {
+margin-left: 600px;
+padding-bottom: 20px;
+width: 254px !important;
+padding: 15px 15px 20px 25px;
+min-height: 600px;
+}
+
+.field {
+  color: white;
+  font-size: 15px;
+} 
+
+#required_note {
+  color: white;
+}
+
+.required {
+  color: #00ffff;
+}
+
+
+    .footer-container {
+
+    background-color: #fff !important;
+    color: #9FA0A0;
+    font-size: 12px;
+
+
+    }
+
+
+    .disclaim-link {
+        color: #9FA0A0 !important;
+    }
+
+
+
+    #paid_for {
+
+  border: 1px solid #9FA0A0;
+  width: 350px;
+  margin: 0 auto;
+  padding: 5px;
+    }
+
+
+        .footer-container-big, 
+        .disclaim-link-big, 
+        #paid_for_big {
+
+    color: #fff !important;
+    font-size: 12px !important;
+
+    }
+
+    #paid_for_big {
+        border: 1px solid #fff;
+  width: 350px;
+  margin: 0 auto;
+  padding: 5px;
+    }
+
+
+    div.info {
+
+      background-color: rgba(255,255,255,0.85);
+      border-radius: 6px;
+
+    }
+
+    div#right-content {
+      width: 450px;
+      margin-right: 56px; 
+      min-height: 200px;
+      position: relative;
+      float: right;
+    }
+
+    h2 {
+      text-transform: uppercase !important;
+    }
+
+    h1 {
+    }
+
+    #add-your-name {
+      background: rgba(255,255,255,0.30);
+      padding: 6px 104px;
+      margin-right: -30px;
+      margin-left: -40px;
+    }
+
+    #infohead {
+     background: rgba(10,33,53,0.70);
+    }
+
+    .signuperror, .error{
+      color: #00ffff;
+    }
+
+        #thankyou {
+        background: rgba(255,255,255,0.30);
+        padding: 10px 203px;
+        margin-right: -140px;
+        margin-left: -140px;
+    }
+
+    #framework-center {
+        background-color: rgba(10,40,40,0.75);
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 38px 60px;
+        padding-top: 35px;
+        max-width: 450px;
+        min-width: 335px;
+    }
+
+
+
+    /* =============================================================================
+   Charles Style - Action buttons
+   ========================================================================== */
+
+.sharebtns {
+width: 268px !important;
+height: 48px;
+margin: 0 auto;
+margin-top: 9px;
+}
+
+
+    #facebookbtn {
+
+        background-color: #4b67a1 !important;
+        background: url('http://action.schneiderforcongress.com/page/-/sprite1.png') 5px -72px no-repeat;
+        background-color: #4b67a1;
+        position: absolute;
+        width: 152px !important;
+        left: 165px;
+        top: 65px;
+        padding-left: 44px;
+    }
+
+
+        #facebookbtn:hover {
+
+        background-color: #3c5a99 !important;
+
+    }
+
+
+
+    #twitterbtn {
+
+        background-color: #33b7ea;
+        background: url('http://action.schneiderforcongress.com/page/-/sprite1.png') 6px -34px no-repeat;
+        background-color: #33b7ea;
+        position: absolute;
+          position: absolute;
+        width: 152px !important;
+        left: 7px;
+        top: 65px;
+        padding-left: 44px;
+    }
+
+
+
+
+        #twitterbtn:hover {
+
+        background-color: #069ad2;
+
+    }
+
+
+form {
+margin: -9px;
+}
+
+
+     .quickdonate {
+    position: absolute !important;
+    top: 20px !important;
+    left: 161px !important;
+    width: 73px !important;
+    height: 37px !important;
+    background-color: #fff !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+    padding: 7px 6px 7px 6px !important;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    font-size: 17px !important;
+    
+    }
+
+ #quickdonatearea:hover input.donateclick {
+         background: url('http://schneiderforcongress.com/wp-content/uploads/2013/08/sprite1.png') -29px -4px no-repeat !important;
+        background-color: #a80000 !important;
+    }
+
+
+
+    .donateclick {
+        position: absolute;
+     top: 20px;
+      left: 210px;
+      width: 32px !important;
+      height: 37px;
+      background-color: #cc0007 !important;
+      margin-bottom: 0;
+      border: none !important;
+      -webkit-border-radius: 3px !important;
+      border-radius: 3px !important;
+      background: url('http://schneiderforcongress.com/wp-content/uploads/2013/08/sprite1.png') -2px -4px no-repeat !important;
+        background-color: #efdada !important;
+        padding: 0 !important;
+
+    }
+
+    .donateclick:hover {
+        background: url('http://schneiderforcongress.com/wp-content/uploads/2013/08/sprite1.png') -29px -4px no-repeat !important;
+        background-color: #f90000 !important;
+    }
+
+    .donateclick:active {
+              position: absolute !important;
+     top: 20px !important;
+      left: 274px !important;
+    } 
+
+    #quickdonatearea {
+      -webkit-border-radius: 3px;
+      border: 0px !important;
+      border-radius: 3px;
+      display: inline-block;
+      color: #ffffff;
+      font-family: Verdana;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: -11px;
+      height: 59px;
+      background-color:#E31818;
+    }
+
+
+    #quickdonatearea:hover {
+      background-color: #D30F0F;
+    }
+
+    #dollar-sign {
+        display: inline !important;
+        position: absolute;
+        left: 26px;
+        top: 22px;
+    }
+
+    .actionbuttons {
+      max-width: 335px;
+      margin: 0 auto;
+    }
